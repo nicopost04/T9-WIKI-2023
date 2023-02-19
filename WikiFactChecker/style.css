@@ -6,7 +6,7 @@
 .banner{
     width: 100%;
     height:100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.475), rgba(0, 0, 0, 0.475)),url(download.jpg);
+    background-image: linear-gradient(rgba(112, 26, 133, 0.518), rgba(0, 0, 0, 0.726)),url(download.jpg);
     background-position: center;
     z-index: 0;
 }
@@ -99,4 +99,7 @@ button:hover span{
 }
 button:hover{
     border: none;
+}
+p{
+    font-size: 20px;
 }

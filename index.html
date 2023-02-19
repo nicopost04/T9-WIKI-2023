@@ -7,41 +7,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   
-  <!-- <link rel="stylesheet" type="text/css" href="./css/colors.css"> -->
-  <!-- <link rel="stylesheet" type="text/css" href="./css/modal.css"> -->
   <link rel="stylesheet" type="text/css" href="bPlate.css">
-  <!-- <link rel="icon" type="image/png" href="./img/se.png"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@800&display=swap" rel="stylesheet">
  
 </head>
 <body>
   <div class="index">
     <section class="index__header">
-      <div class="index__logo"><img src="Wikipedia-logo_(inverse).png" alt=""></div>
+      
+      <div class="index__logo"><h1>wikiFactCheck</h1><img class="index__logo" id="real__logo" src="imageedit_1_9824417860.png" alt=""></div>
       <ul class="index__nav">
         <li><a href="/Users/nico/Desktop/PersonalProjects/WikiFactCheck/WikiFactChecker/factchecker.html">Home</a></li>
         <li class="index__active"><a>Fact Checker</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
       <div class="index__search">
-        <form class="index__form" action="##" methode="GET">
-          <div>
-            <input name="q" type="search" value="Enter a statement..."
-                   class="index__query" 
-                   maxlength="512"
-                   autocomplete="off"
+        <!-- <form class="index__form" action="##" methode="GET"> -->
+            <input class="index__form" id="input" name="q" type="search" placeholder="Enter a statement..."
                    title="Search"
                    aria-label="Search"
                    dir="ltr"
                    spellcheck="false"
                    autofocus="autofocus"
             >
-          </div>
-          <button class="index__button" aria-label="Search" type="submit">
+          <!-- <button class="index__button" aria-label="Search" id="submit" type="button"> -->
             <div class="index__ico"></div>
           </button>
-        </form>
+        <!-- </form> -->
       </div>
+
+      <div class="verdict">
+        <div id="verdict"></div>  
+    </div>
+
     </section>
+
+      <!-- scroll for results HERE  -->
+      
+
+
     <footer class="index__footer">
     </footer>
   </div>
@@ -62,5 +66,14 @@
     </div>
   </div>
   <!-- /Modal -->
+
+    <!-- results from search  -->
+  <div class="results">
+      <p id="error" class="results__error"></p>
+      <div id="results" class="results__items"></div>  
+  </div>
+
 </body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="script.js"></script>
 </html>

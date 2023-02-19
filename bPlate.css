@@ -21,7 +21,6 @@
   /* ------- CSS only for the Startpage ------- */
   
   body {
-    /* background-image: url("https://lorempixel.com/1024/768/"), url("https://source.unsplash.com/random"); */
     font-size: 16px;
     line-height: 1.2;
     background-size: cover;
@@ -30,7 +29,59 @@
     -webkit-background-size: cover;
     color: var(--text-light-color);
     font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+    margin: 25px 25px 25px 25px;
   }
+
+  h1 {
+    color: #545454;
+    font-size: 1.82rem;
+  }
+
+  .verdict {
+    text-align: center;
+  }
+
+  .results {
+    font-size: 200;
+  }
+
+  .results__item__title {
+    font-family: 'Source Code Pro', serif;
+    font-weight: 500;
+    margin: 20px;
+  }
+
+  a:link { 
+    text-decoration: none; 
+    color: #27282b;
+  }
+
+  a:hover { 
+    text-decoration: underline;
+    color: #27282b;
+  }
+
+  .results__item__intro {
+    text-decoration: none;
+  }
+
+  .results__item {
+    /* position: center; */
+    background: white;
+    border-radius: 10px;
+    border: 1px solid purple;
+    display: inline-block;
+    height: 275px;
+    margin: 1rem;
+    padding: 25px 50px 50px;
+    position: relative;
+    width: 350px;
+    /* box-shadow: 0 1px 3px rgba(68, 15, 80, 0.12), 0 1px 2px rgba(85, 18, 93, 0.24); */
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    cursor: pointer;
+    overflow: hidden;
+}
+
   
   .index__header,
   .index__bottom {
@@ -72,13 +123,14 @@
     background-size: contain;
     background-position: 50% 50%;
     background-repeat: no-repeat;
+    color: purple;
     /* background-image: url("https://raw.githubusercontent.com/vanGato/search-engine-template/master/img/search-engine.png"); PUT LOGO HERE NICO */
   }
   
   @media (min-width:600px) {
     .index__logo {
-      height: 62px;
-      width: 385px;
+      height: auto;
+      width: 200px;
     }
   }
   
@@ -109,10 +161,10 @@
     padding: 0;
     display: flex;
     line-height: 1;
-    font-size: 16px;
+    font-size: 30px;
     list-style: none;
     justify-content: space-around;
-    color: var(--text-light-color);
+    color: purple;
   }
   
   @media (min-width:500px) {
