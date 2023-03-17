@@ -1,11 +1,7 @@
 # T9-WIKI-2023
-This is a website Fact checker using wikipedia
+This website is a Fact checker using the wikipedia API. It takes a statement from the user, and uses Wikipedia to 
+evaluate the validity of the statement. It also provides the user with links to relevant Wikipedia articles based on
+their input.
 
-Youtube video Nico watched for how to make a website:
-https://www.youtube.com/watch?v=PgAZ8KzfhO8
-
-Search engine template which we referenced:
-https://codepen.io/vangato/pen/oOZepM
-
-Youtube video Ryan used to figure out wikipedia API:
-https://www.youtube.com/watch?v=yqwHxAH1xrw&t=312s
+This project was built in 24 hours at CU Boulder's T9 Hackathon.
+Our tech stack was HTML, CSS, and vanilla Javascript. We used the Axios HTTP client to handle the API requests. 
